@@ -39,8 +39,16 @@ h3 {
     font-size: 1rem;
 }
 
+p {
+    line-height: 140%;
+}
+
 .subtitle {
     font-family: "Inconsolata", monospace;
     font-size: 1.25rem;
     line-height: 120%;
+}
+
+.text-sm {
+    font-size: 0.875rem;
 }

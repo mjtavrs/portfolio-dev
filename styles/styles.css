@@ -1,5 +1,92 @@
 * {
   box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Asap", sans-serif;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 140%;
+}
+
+.subtitle {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+}
+body header {
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/images/svg/background_intro.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 48rem;
+  padding: 0 11.25rem;
+  width: 100%;
+}
+body header #personalInfo div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem;
+  width: 100%;
+}
+body header #personalInfo div .subtitle {
+  color: #c0c4ce;
+}
+body header #personalInfo div .subtitle span {
+  color: #e3646e;
+}
+body header #personalInfo div h1 {
+  color: #e2e4e9;
+  margin: 0.5rem 0 1.25rem;
+}
+body header #personalInfo div .text-sm {
+  color: #878ea1;
+  text-align: center;
+}
+body header #tags ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+body header #tags ul li {
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #292c34;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+body header #tags ul li span {
+  color: #c0c4ce;
 }/*# sourceMappingURL=styles.css.map */
