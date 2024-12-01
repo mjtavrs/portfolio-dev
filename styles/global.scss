@@ -1,0 +1,46 @@
+// Colors
+// Principal
+$red: #e3646e;
+$purple: #bb72e9;
+$blue: #3996db;
+$green: #82bc4f;
+$yellow: #eabd5f;
+
+// Base
+$gray-100: #0d0e11;
+$gray-200: #16181d;
+$gray-300: #292c34;
+$gray-400: #878ea1;
+$gray-500: #c0c4ce;
+$gray-600: #e2e4e9;
+
+* {
+    box-sizing: border-box;
+    font-family: "Maven Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Asap", sans-serif;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.subtitle {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.25rem;
+    line-height: 120%;
+}
