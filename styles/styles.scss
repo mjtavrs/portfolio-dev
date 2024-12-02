@@ -210,7 +210,9 @@ body {
 
                 .contactListItem {
                     background-color: $gray-300;
+                    border: 2px solid transparent;
                     border-radius: 0.5rem;
+                    cursor: pointer;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -236,6 +238,28 @@ body {
                     .ph-arrow-up-right {
                         color: $blue;
                         font-size: 1.25rem;
+                    }
+
+                    &:hover {
+                        border: 2px solid $blue;
+                        transition: 300ms border;
+
+                        div {
+                            .ph {
+                                color: $blue;
+                                transition: 300ms color;
+                            }
+                        }
+                    }
+
+                    &:not(hover) {
+                        transition: 300ms border;
+
+                        div {
+                            .ph {
+                                transition: 300ms color;
+                            }
+                        }
                     }
                 }
             }

@@ -204,7 +204,9 @@ body footer div #contactList {
 }
 body footer div #contactList .contactListItem {
   background-color: #292c34;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -227,4 +229,18 @@ body footer div #contactList .contactListItem div span {
 body footer div #contactList .contactListItem .ph-arrow-up-right {
   color: #3996db;
   font-size: 1.25rem;
+}
+body footer div #contactList .contactListItem:hover {
+  border: 2px solid #3996db;
+  transition: 300ms border;
+}
+body footer div #contactList .contactListItem:hover div .ph {
+  color: #3996db;
+  transition: 300ms color;
+}
+body footer div #contactList .contactListItem:not(hover) {
+  transition: 300ms border;
+}
+body footer div #contactList .contactListItem:not(hover) div .ph {
+  transition: 300ms color;
 }/*# sourceMappingURL=styles.css.map */
