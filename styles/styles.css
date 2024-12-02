@@ -38,8 +38,8 @@ p {
 }
 
 body {
-  height: 100dvh;
-  width: 100dvw;
+  height: 100%;
+  width: 100%;
 }
 body header {
   align-items: center;
@@ -88,5 +88,46 @@ body header #tags ul li {
   padding: 0.5rem 1rem;
 }
 body header #tags ul li span {
+  color: #c0c4ce;
+}
+body main #projects {
+  background-color: #16181d;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 4.5rem 10rem 9rem;
+}
+body main #projects #projectsHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main #projects #projectsHeader .subtitle {
+  color: #e3646e;
+}
+body main #projects #projectsHeader h2 {
+  color: #e2e4e9;
+}
+body main #projects #projectsList {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-rows: repeat(2, 17.5rem);
+  grid-template-columns: repeat(3, 1fr);
+}
+body main #projects #projectsList .projectsListItem {
+  background-color: #292c34;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+body main #projects #projectsList .projectsListItem img {
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+body main #projects #projectsList .projectsListItem h3 {
+  color: #e2e4e9;
+}
+body main #projects #projectsList .projectsListItem p {
   color: #c0c4ce;
 }/*# sourceMappingURL=styles.css.map */
