@@ -82,11 +82,14 @@ body {
             }
         }
 
-        #projects {
-            background-color: $gray-200;
+        #projects, #services {
             display: flex;
             flex-direction: column;
             gap: 3.5rem;
+        }
+
+        #projects {
+            background-color: $gray-200;
             padding: 4.5rem 10rem 9rem;
 
             #projectsList {
@@ -114,8 +117,49 @@ body {
         }
 
         #services {
+            background-color: $gray-100;
+            padding: 5.5rem 15rem 7.5rem;
+
             #servicesList {
-                
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+
+                .servicesListItem {
+                    border: 2px solid $gray-200;
+                    border-radius: 0.75rem;
+                    padding: 1.25rem;
+
+                    i {
+                        font-size: 3rem;
+                    }
+
+                    h3 {
+                        margin: 1.25rem 0 0.5rem;
+                    }
+
+                    .text-sm {
+                        color: $gray-500;
+                    }
+                }
+
+                .servicesListItem:nth-child(1) {
+                    i {
+                        color: $purple;
+                    }
+                }
+
+                .servicesListItem:nth-child(2) {
+                    i {
+                        color: $yellow;
+                    }
+                }
+
+                .servicesListItem:nth-child(3) {
+                    i {
+                        color: $green;
+                    }
+                }
             }
         }
     }

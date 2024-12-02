@@ -103,11 +103,13 @@ body main #projectsHeader .subtitle, body main #servicesHeader .subtitle {
 body main #projectsHeader h2, body main #servicesHeader h2 {
   color: #e2e4e9;
 }
-body main #projects {
-  background-color: #16181d;
+body main #projects, body main #services {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
+}
+body main #projects {
+  background-color: #16181d;
   padding: 4.5rem 10rem 9rem;
 }
 body main #projects #projectsList {
@@ -128,4 +130,36 @@ body main #projects #projectsList .projectsListItem img {
 }
 body main #projects #projectsList .projectsListItem p {
   color: #c0c4ce;
+}
+body main #services {
+  background-color: #0d0e11;
+  padding: 5.5rem 15rem 7.5rem;
+}
+body main #services #servicesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+body main #services #servicesList .servicesListItem {
+  border: 2px solid #16181d;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+body main #services #servicesList .servicesListItem i {
+  font-size: 3rem;
+}
+body main #services #servicesList .servicesListItem h3 {
+  margin: 1.25rem 0 0.5rem;
+}
+body main #services #servicesList .servicesListItem .text-sm {
+  color: #c0c4ce;
+}
+body main #services #servicesList .servicesListItem:nth-child(1) i {
+  color: #bb72e9;
+}
+body main #services #servicesList .servicesListItem:nth-child(2) i {
+  color: #eabd5f;
+}
+body main #services #servicesList .servicesListItem:nth-child(3) i {
+  color: #82bc4f;
 }/*# sourceMappingURL=styles.css.map */
