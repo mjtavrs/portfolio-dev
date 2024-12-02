@@ -20,6 +20,7 @@ h2 {
 }
 
 h3 {
+  color: #e2e4e9;
   font-size: 1rem;
 }
 
@@ -90,24 +91,24 @@ body header #tags ul li {
 body header #tags ul li span {
   color: #c0c4ce;
 }
+body main #projectsHeader, body main #servicesHeader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body main #projectsHeader .subtitle, body main #servicesHeader .subtitle {
+  color: #e3646e;
+}
+body main #projectsHeader h2, body main #servicesHeader h2 {
+  color: #e2e4e9;
+}
 body main #projects {
   background-color: #16181d;
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
   padding: 4.5rem 10rem 9rem;
-}
-body main #projects #projectsHeader {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-body main #projects #projectsHeader .subtitle {
-  color: #e3646e;
-}
-body main #projects #projectsHeader h2 {
-  color: #e2e4e9;
 }
 body main #projects #projectsList {
   display: grid;
@@ -124,9 +125,6 @@ body main #projects #projectsList .projectsListItem img {
   border-radius: 0.5rem;
   margin-bottom: 1.25rem;
   width: 100%;
-}
-body main #projects #projectsList .projectsListItem h3 {
-  color: #e2e4e9;
 }
 body main #projects #projectsList .projectsListItem p {
   color: #c0c4ce;
