@@ -119,7 +119,9 @@ body main #projects #projectsList {
 }
 body main #projects #projectsList .projectsListItem {
   background-color: #292c34;
+  border: 2px solid transparent;
   border-radius: 0.75rem;
+  cursor: pointer;
   padding: 0.75rem;
 }
 body main #projects #projectsList .projectsListItem img {
@@ -129,6 +131,13 @@ body main #projects #projectsList .projectsListItem img {
 }
 body main #projects #projectsList .projectsListItem p {
   color: #c0c4ce;
+}
+body main #projects #projectsList .projectsListItem:hover {
+  border: 2px solid #878ea1;
+  transition: 300ms border;
+}
+body main #projects #projectsList .projectsListItem:not(hover) {
+  transition: 300ms border;
 }
 body main #services {
   background-color: #0d0e11;

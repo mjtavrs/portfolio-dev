@@ -99,7 +99,9 @@ body {
                 
                 .projectsListItem {
                     background-color: $gray-300;
+                    border: 2px solid transparent;
                     border-radius: 0.75rem;
+                    cursor: pointer;
                     padding: 0.75rem;
                     
                     img {
@@ -110,6 +112,15 @@ body {
                     
                     p {
                         color: $gray-500;
+                    }
+
+                    &:hover {
+                        border: 2px solid $gray-400;
+                        transition: 300ms border;
+                    }
+
+                    &:not(hover) {
+                        transition: 300ms border;
                     }
                 }
             }
