@@ -162,4 +162,61 @@ body main #services #servicesList .servicesListItem:nth-child(2) i {
 }
 body main #services #servicesList .servicesListItem:nth-child(3) i {
   color: #82bc4f;
+}
+body footer {
+  align-items: center;
+  background-image: url("../assets/images/svg/background_contacts.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  height: 49rem;
+}
+body footer div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+body footer div .subtitle {
+  color: #bb72e9;
+}
+body footer div h2 {
+  color: #e2e4e9;
+  margin: 0.5rem 0;
+}
+body footer div p {
+  color: #c0c4ce;
+}
+body footer div #contactList {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+body footer div #contactList .contactListItem {
+  background-color: #292c34;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem;
+  width: inherit;
+}
+body footer div #contactList .contactListItem div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+body footer div #contactList .contactListItem div .ph {
+  color: #878ea1;
+  font-size: 1.75rem;
+}
+body footer div #contactList .contactListItem div span {
+  color: #c0c4ce;
+  font-weight: 500;
+}
+body footer div #contactList .contactListItem .ph-arrow-up-right {
+  color: #3996db;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=styles.css.map */

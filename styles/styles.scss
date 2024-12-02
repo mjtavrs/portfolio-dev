@@ -15,7 +15,7 @@ body {
         height: 48rem;
         padding: 0 11.25rem;
         width: 100%;
-
+        
         #personalInfo {
             div {
                 align-items: center;
@@ -23,33 +23,33 @@ body {
                 flex-direction: column;
                 padding: 0 10rem;
                 width: 100%;
-    
+                
                 .subtitle {
                     color: $gray-500;
-    
+                    
                     span {
                         color: $red;
                     }
                 }
-    
+                
                 h1 {
                     color: $gray-600;
                     margin: 0.5rem 0 1.25rem;
                 }
-    
+                
                 .text-sm {
                     color: $gray-400;
                     text-align: center;
                 }
             }
         }
-
+        
         #tags {
             ul {
                 display: flex;
                 gap: 1rem;
                 list-style: none;
-
+                
                 li {
                     align-items: center;
                     border-radius: 9999px;
@@ -57,7 +57,7 @@ body {
                     display: flex;
                     gap: 0.5rem;
                     padding: 0.5rem 1rem;
-
+                    
                     span {
                         color: $gray-500;
                     }
@@ -65,96 +65,96 @@ body {
             }
         }
     }
-
+    
     main {
         #projectsHeader, #servicesHeader {
             align-items: center;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-
+            
             .subtitle {
                 color: $red;
             }
-
+            
             h2 {
                 color: $gray-600;
             }
         }
-
+        
         #projects, #services {
             display: flex;
             flex-direction: column;
             gap: 3.5rem;
         }
-
+        
         #projects {
             background-color: $gray-200;
             padding: 4.5rem 10rem 9rem;
-
+            
             #projectsList {
                 display: grid;
                 gap: 1.5rem;
                 grid-template-rows: repeat(2, 17.5rem);
                 grid-template-columns: repeat(3, 1fr);
-
+                
                 .projectsListItem {
                     background-color: $gray-300;
                     border-radius: 0.75rem;
                     padding: 0.75rem;
-
+                    
                     img {
                         border-radius: 0.5rem;
                         margin-bottom: 1.25rem;
                         width: 100%;
                     }
-
+                    
                     p {
                         color: $gray-500;
                     }
                 }
             }
         }
-
+        
         #services {
             background-color: $gray-100;
             padding: 5.5rem 15rem 7.5rem;
-
+            
             #servicesList {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1.5rem;
-
+                
                 .servicesListItem {
                     border: 2px solid $gray-200;
                     border-radius: 0.75rem;
                     padding: 1.25rem;
-
+                    
                     i {
                         font-size: 3rem;
                     }
-
+                    
                     h3 {
                         margin: 1.25rem 0 0.5rem;
                     }
-
+                    
                     .text-sm {
                         color: $gray-500;
                     }
                 }
-
+                
                 .servicesListItem:nth-child(1) {
                     i {
                         color: $purple;
                     }
                 }
-
+                
                 .servicesListItem:nth-child(2) {
                     i {
                         color: $yellow;
                     }
                 }
-
+                
                 .servicesListItem:nth-child(3) {
                     i {
                         color: $green;
@@ -163,8 +163,72 @@ body {
             }
         }
     }
-
+    
     footer {
-        
+        align-items: center;
+        background-image: url("../assets/images/svg/background_contacts.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        height: 49rem;
+
+        div {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .subtitle {
+                color: $purple;
+            }
+
+            h2 {
+                color: $gray-600;
+                margin: 0.5rem 0;
+            }
+
+            p {
+                color: $gray-500;
+            }
+
+            #contactList {
+                display: flex;
+                gap: 1rem;
+                margin-top: 3rem;
+                width: 100%;
+
+                .contactListItem {
+                    background-color: $gray-300;
+                    border-radius: 0.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 1.25rem;
+                    width: inherit;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.75rem;
+
+                        .ph {
+                            color: $gray-400;
+                            font-size: 1.75rem;
+                        }
+
+                        span {
+                            color: $gray-500;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .ph-arrow-up-right {
+                        color: $blue;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 }
